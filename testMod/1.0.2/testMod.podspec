@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.requires_arc = 'testMod/testMod/Foundation/ARC/**/*.{h,m}'
 
-  s.compiler_flags = '-Wnon-modular-include-in-framework-module'
+  #s.compiler_flags = '-Wnon-modular-include-in-framework-module'
 
   s.source_files = 'testMod/testMod/Foundation/**/*.{h,m}'
   #s.framework    = 'UIKit'
