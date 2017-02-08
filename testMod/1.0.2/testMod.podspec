@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   #s.compiler_flags = '-Wnon-modular-include-in-framework-module'
 
-  s.source_files = 'testMod/testMod/Foundation/ARC/**/*.{h,m}' , 'testMod/testMod/Foundation/JSONKit/*.{h,m}', 'testMod/testMod/Foundation/KeychainItemWrapper/*.{h,m}'
+  s.source_files = ['testMod/testMod/Foundation/ARC/**/*.{h,m}', 'testMod/testMod/Foundation/JSONKit/*.{h,m}', 'testMod/testMod/Foundation/KeychainItemWrapper/*.{h,m}']
   #s.framework    = 'UIKit'
 
   s.ios.library = 'sqlite3'
