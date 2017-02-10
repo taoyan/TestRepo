@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
 
   #s.compiler_flags = '-Wnon-modular-include-in-framework-module'
 
-  s.source_files = 'bbaestock/Vendor/MiPushSdk/*.{h,m}'
+  s.source_files = 'bbaestock/Vendor/MiPushSdk/*'
   #s.framework    = 'UIKit'
 
   #s.ios.library = 'sqlite3'
-  #s.vendored_library = 'MiPushSdk/libMiPushSDK.a'
+  #s.ios.vendored_library = 'MiPushSdk/libMiPushSDK.a'
 
   #s.dependency   'MyResourceManager',  '2.1.2' 
   #s.compiler_flags = {'Header_Search_Paths=recursive'}
