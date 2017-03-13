@@ -45,12 +45,12 @@ EOS
   end
 
 
-  # s.subspec 'Constant' do |ss|
-  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCustomBaseViews.{h,m}'
-  #   # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.h'
-  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCustomBaseViews.h'
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  # end
+  s.subspec 'Constant' do |ss|
+    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCanvasView.{h,m}'
+    # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.h'
+    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCanvasView.h'
+    ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  end
 
   # s.subspec 'View' do |ss|
   #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.{h,m}'
