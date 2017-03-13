@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.bbae.com'
   # s.social_media_url = 'https://twitter.com/AFNetworking'
   s.authors  = { 'bbae yant' => 'tao.yan@alphayee.com' }
-  s.source   = { :git => 'http://git.jimubox.com/BBAE/iOS-toB-SourceCode.git', :tag => 'v1.0.3'}
+  s.source   = { :git => 'http://git.jimubox.com/BBAE/iOS-toB-SourceCode.git', :tag => 'v1.0.3', :submodules => true }
   # s.source = { :http => 'http://localhost/Users/jimubox/Desktop/jimustock_iOS_BBAE' }
   s.requires_arc = true
   
@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
 #import "JMBResourceManager.h"
 
 EOS
-
   s.prefix_header_contents = pch_AF
   s.ios.deployment_target = '7.0'
 
@@ -38,13 +37,26 @@ EOS
   end
   
 
-  s.subspec 'UIImage+PDF' do |ss|
-    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.{h,m}'
-    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
-    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
+  # s.subspec 'UIImage+PDF' do |ss|
+  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.{h,m}'
+  #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
+  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
+  # end
 
-    ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  end
+
+  # s.subspec 'Constant' do |ss|
+  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCustomBaseViews.{h,m}'
+  #   # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.h'
+  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSCustomBaseViews.h'
+  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  # end
+
+  # s.subspec 'View' do |ss|
+  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.{h,m}'
+  #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.h'
+  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.h'
+  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  # end
 
   # s.subspec 'Category' do |ss|
   #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
