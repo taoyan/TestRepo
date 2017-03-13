@@ -12,13 +12,16 @@ Pod::Spec.new do |s|
   
   # s.public_header_files = 'bbaestock/jimustockFoundation/jimustockFoundation/**/*.{h,m}'
   # s.source_files = 'bbaestock/jimustockFoundation/jimustockFoundation/jimustockFoundation.h'
-
+  
   pch_AF = <<-EOS
 #import "JMBResourceManager.h"
+
 EOS
 
   s.prefix_header_contents = pch_AF
   s.ios.deployment_target = '7.0'
+
+
 
   s.subspec 'ResourceManager' do |ss|
     ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/ResourceManager/*.{h,m}'
@@ -27,14 +30,19 @@ EOS
 
   end
 
-   s.subspec 'Tool' do |ss|
+  s.subspec 'Tool' do |ss|
     ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Tool/*.{h,m}'
-    # ss.private_header_files = 'bbaestock/jimustockFoundation/jimustockFoundation/Tool/*.h'
     ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Tool/*.h'
 
     ss.ios.dependency 'JimustockFoundation/ResourceManager'
   end
   
+  # s.subspec 'Category' do |ss|
+  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
+  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
+
+    # ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  # end
 
 
   end
