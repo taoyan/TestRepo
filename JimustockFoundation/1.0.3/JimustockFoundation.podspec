@@ -14,9 +14,7 @@ Pod::Spec.new do |s|
   # s.source_files = 'bbaestock/jimustockFoundation/jimustockFoundation/jimustockFoundation.h'
   
   pch_AF = <<-EOS
-
 #import "JMBResourceManager.h"
-
 
 EOS
 
@@ -39,6 +37,15 @@ EOS
     ss.ios.dependency 'JimustockFoundation/ResourceManager'
   end
   
+
+  s.subspec 'UIImage+PDF' do |ss|
+    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.{h,m}'
+    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
+    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
+
+    ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  end
+
   # s.subspec 'Category' do |ss|
   #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
   #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
