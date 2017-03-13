@@ -14,9 +14,8 @@ Pod::Spec.new do |s|
   # s.source_files = 'bbaestock/jimustockFoundation/jimustockFoundation/jimustockFoundation.h'
   
   pch_AF = <<-EOS
+
 #import "JMBResourceManager.h"
-
-
 
 
 EOS
