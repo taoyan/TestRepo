@@ -59,13 +59,13 @@ EOS
   #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
   # end
 
-  # s.subspec 'Category' do |ss|
-  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
-  #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
-  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
+    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
+    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.h'
 
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  # end
+    ss.ios.dependency 'JimustockFoundation/ResourceManager'
+  end
 
 
   end
