@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.bbae.com'
   # s.social_media_url = 'https://twitter.com/AFNetworking'
   s.authors  = { 'bbae yant' => 'tao.yan@alphayee.com' }
-  s.source   = { :git => 'http://git.jimubox.com/BBAE/iOS-toB-SourceCode.git', :tag => 'v1.0.3', :submodules => true }
+  s.source   = { :git => 'http://git.jimubox.com/BBAE/iOS-toB-SourceCode.git', :tag => 'v1.0.3' }
   # s.source = { :http => 'http://localhost/Users/jimubox/Desktop/jimustock_iOS_BBAE' }
   s.requires_arc = true
   
