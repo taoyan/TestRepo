@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/jimustockFoundation.h'
   # s.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/jimustockFoundation.h'
   
-  pch_Foundation = <<-EOS
-#import "JMBResourceManager.h"
+#   pch_Foundation = <<-EOS
+# #import "JMBResourceManager.h"
 
-EOS
+# EOS
   # s.prefix_header_contents = pch_Foundation
   # s.prefix_header_file = "jimustock_iOS_BBAE/bbaestock/jimustockFoundation/Supporting Files/jmsFoundation.pch"
   s.ios.deployment_target = '7.0'
