@@ -67,15 +67,16 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Masonry/Masonry.h'
     end
 
-    # ss.subspec 'JPDecrypt' do |sss|
-    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/*.{h,m}'
-    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/JPDecrypt.h'
-    # end
+    ss.subspec 'JPDecrypt' do |sss|
+      sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/*.{h,m}'
+      sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/JPDecrypt.h'
+    end
 
-    # ss.subspec 'MyLayout' do |sss|
-    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/*.{h,m}'
-    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/MyLayout.h'
-    # end
+    ss.subspec 'MyLayout' do |sss|
+      sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/*.{h,m}'
+      sss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/*.h'
+      sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/MyLayout.h'
+    end
 
     # ss.subspec 'AFNetworking' do |sss|
     #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/*.{h,m}'
