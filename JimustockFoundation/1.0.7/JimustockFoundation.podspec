@@ -40,7 +40,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIImage+PDF' do |ss|
     ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.{h,m}'
-    # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
     ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
   end
 
@@ -58,14 +57,47 @@ Pod::Spec.new do |s|
     ss.ios.dependency 'JimustockFoundation/ResourceManager'
   end
 
-  # s.subspec 'Vendor' do |ss|
-  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/**/*.{h,m}'
-  #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/**/*.h'
-  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
+  s.subspec 'Vendor' do |ss|
+    # ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
+    # ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
 
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  # end
+    ss.subspec 'Masonry' do |sss|
+      sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Masonry/*.{h,m}'
+      sss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Masonry/*.h'
+      sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Masonry/Masonry.h'
+    end
+
+    # ss.subspec 'JPDecrypt' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/JPDecrypt/JPDecrypt.h'
+    # end
+
+    # ss.subspec 'MyLayout' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/MyLayout.h'
+    # end
+
+    # ss.subspec 'AFNetworking' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/BBAEAFNetworking.h'
+    # end
+
+    # ss.subspec 'MJRefresh' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/**/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/BBAEMJRefresh.h'
+    #   sss.resource = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/BBAEMJRefresh.bundle'
+    # end
+
+    # ss.subspec 'MyAttributedString' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/MyAttributedStringBuilder.h'
+    # end
+
+    # ss.subspec 'JMSToastView' do |sss|
+    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/ToastView/*.{h,m}'
+    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/ToastView/JMSToastView.h'
+    # end
+  end
 
 
   # s.subspec 'View' do |ss|
