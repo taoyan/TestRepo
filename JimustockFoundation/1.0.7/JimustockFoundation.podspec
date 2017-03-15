@@ -78,10 +78,11 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyLayout/MyLayout.h'
     end
 
-    # ss.subspec 'AFNetworking' do |sss|
-    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/*.{h,m}'
-    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/BBAEAFNetworking.h'
-    # end
+    ss.subspec 'AFNetworking' do |sss|
+      sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/*.{h,m}'
+      sss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/*.h'
+      sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/AFNetworking/BBAEAFNetworking.h'
+    end
 
     # ss.subspec 'MJRefresh' do |sss|
     #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/**/*.{h,m}'
