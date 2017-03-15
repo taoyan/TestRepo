@@ -42,16 +42,14 @@ EOS
     ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.{h,m}'
     ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
     ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/UIImage+PDF/*.h'
-    # ss.ios.dependency 'JimustockFoundation/ResourceManager'
   end
 
 
-  # s.subspec 'Constant' do |ss|
-  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.{h,m}'
-  #   # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.h'
-  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/JMSConstant.h'
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  # end
+  s.subspec 'Constant' do |ss|
+    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.{h,m}'
+    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/*.h'
+    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Constant/JMSConstant.h'
+  end
 
   # s.subspec 'Category' do |ss|
   #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Category/**/*.{h,m}'
