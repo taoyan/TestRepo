@@ -92,10 +92,10 @@ EOS
       ss.ios.dependency 'JimustockFoundation/ResourceManager'
     end
 
-    # ss.subspec 'MyAttributedString' do |sss|
-    #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/*.{h,m}'
-    #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/MyAttributedStringBuilder.h'
-    # end
+    ss.subspec 'MyAttributedString' do |sss|
+      sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/*.{h,m}'
+      sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MyAttributedString/MyAttributedStringBuilder.h'
+    end
 
     # ss.subspec 'JMSToastView' do |sss|
     #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/ToastView/*.{h,m}'
