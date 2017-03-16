@@ -89,7 +89,7 @@ EOS
       sss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/*.h'
       sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/BBAEMJRefresh.h'
       sss.resource = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/MJRefresh/BBAEMJRefresh.bundle'
-      ss.ios.dependency 'JimustockFoundation/ResourceManager'
+      sss.ios.dependency 'JimustockFoundation/ResourceManager'
     end
 
     ss.subspec 'MyAttributedString' do |sss|
@@ -100,6 +100,7 @@ EOS
     # ss.subspec 'JMSToastView' do |sss|
     #   sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/ToastView/*.{h,m}'
     #   sss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/ToastView/JMSToastView.h'
+    #   sss.ios.dependency 'JimustockFoundation/ResourceManager'
     # end
   end
 
