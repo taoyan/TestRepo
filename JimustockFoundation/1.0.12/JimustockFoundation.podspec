@@ -59,9 +59,9 @@ EOS
 
 
   s.subspec 'Vendor' do |ss|
-    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/**/*.h'
-    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/**/*.h'
-    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
+    # ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
+    # ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/**/*.h'
+    # ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Vendor.h'
 
     ss.subspec 'Masonry' do |sss|
       sss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/Vendor/Masonry/*.{h,m}'
@@ -118,13 +118,13 @@ EOS
   end
 
 
-  # s.subspec 'View' do |ss|
-  #   ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.{h,m}'
-  #   ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.h'
-  #   ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSFoundationView.h'
-  #   ss.ios.dependency 'JimustockFoundation/ResourceManager'
-  #   ss.ios.dependency 'JimustockFoundation/Vendor'
-  # end
+  s.subspec 'View' do |ss|
+    ss.source_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.{h,m}'
+    ss.private_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/*.h'
+    ss.public_header_files = 'jimustock_iOS_BBAE/bbaestock/jimustockFoundation/jimustockFoundation/View/JMSFoundationView.h'
+    ss.ios.dependency 'JimustockFoundation/Category'
+    ss.ios.dependency 'JimustockFoundation/Vendor'
+  end
 
 
   end
